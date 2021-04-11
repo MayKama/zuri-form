@@ -1,0 +1,58 @@
+form{
+    width: 300px;
+}
+
+/*to change the width of the input*/
+input{
+    width: 100%;
+}
+
+/*to resize the button size of the text area*/
+textarea{
+    resize: vertical;
+
+    /*but because we dont want to set it to infinitely vertical*/
+    max-height: 100px;
+}
+
+/*to remove the border in the text area*/
+input, textarea{
+    outline: none;
+
+    border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+input focus, textarea :focus{
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+
+    border: 1px solid rgb(255, 0, 0,);
+}
+
+
+/*styling everything that has a placeholder*/
+::placeholder{
+    color: black;
+    opacity: 1; /*this makes the style looks the same in any browser that may be used to view it*/
+}
+/*for other browsers like ms edge etc*/
+:-ms-input-placeholder{
+    color: black;
+    opacity: 1;
+}
+
+::-ms-input-placeholder{
+    color: black;
+    opacity: 1;
+}
+    /*to effect changes on the radio button*/
+form input[type="radio"] {
+    float: left;
+    width: 20px;
+    margin-right: 10px;
+}
+form label{
+    float: left; 
+    width: 100px;
+}
+
+    
